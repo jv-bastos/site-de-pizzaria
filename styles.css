@@ -7,8 +7,25 @@
 }
 
 .cabecalho{
-    background-color: #8B0000;
+    background-color: #5e0101;
     display: flex;
+}
+
+.inicio__link,
+.cardapio__link,
+.localizacao__link,
+.sobre__link,
+.contato__link{
+    text-decoration: none;
+    color: white;
+}
+
+.inicio__link:hover,
+.cardapio__link:hover,
+.localizacao__link:hover,
+.sobre__link:hover,
+.contato__link:hover{
+    color: rgb(148, 148, 148);
 }
 
 .cabecalho__itens{
@@ -17,7 +34,6 @@
     padding: 5% 0 4% 10%;
     font-family: 'Cinzel', sans-serif;
     font-size: 25px;
-    color: white;
 }
 
 .logo{
@@ -34,7 +50,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 6%;;
+    padding: 6%;
 }
 
 .inicio__titulo{
@@ -90,8 +106,88 @@
     font-weight: 600;
 }
 
+.localizacao{
+    font-family: 'Cinzel', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.endereco{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 3% 2% 4% 2%;
+}
+
+.mapa img{
+    height: 300px;
+    width: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.342);
+}
+
+.mapa__botao{
+    padding: 2% 35%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 600;
+    gap: 10px;
+}
+
+.mapa__botao__maps{
+    padding: 2% 8% 2% 5%;
+    text-decoration: none;
+    color: black;
+    border-radius: 12px;
+    background-color: #faf9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.342);
+}
+
+.mapa__botao__waze{
+    padding: 2% 8% 2% 5%;
+    text-decoration: none;
+    color: black;
+    border-radius: 12px;
+    background-color: #faf9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.342);
+}
+
+.sobre{
+    text-align: center;
+    font-family: 'Cinzel', sans-serif;
+    background-image: url(assets/Positano.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 6%;
+}
+
+.sobre__titulo{
+    font-family: 'Cinzel', sans-serif;
+    font-size: 45px;
+    display: flex;
+    padding-bottom: 2%;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.sobre__texto{
+    padding-top: 1.5%;
+    font-family: 'Cinzel', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
 .rodape{
-    background-color: #8B0000;
+    background-color: #5e0101;
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
