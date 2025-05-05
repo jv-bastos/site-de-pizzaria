@@ -32,9 +32,9 @@ html {
 }
 
 .cabecalho__itens{
-    gap: 40px;
+    gap: 7%;
     display: flex;
-    padding: 5% 0 4% 10%;
+    padding: 5% 0 4% 13%;
     font-family: 'Cinzel', sans-serif;
     font-size: 25px;
 }
@@ -61,6 +61,7 @@ html {
     color: white;
 }
 
+.inicio__frase__dois,
 .inicio__frase{
     padding: 2%;
     font-family: 'Cinzel', sans-serif;
@@ -121,14 +122,13 @@ html {
 }
 
 .mapa img{
-    height: 300px;
-    width: auto;
+    height: auto;
+    max-width: 100%;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.342);
 }
 
 .mapa__botao{
-    padding: 2% 35%;
-    padding-bottom: 5%;
+    padding: 2% 35% 5% 35%;
     display: flex;
     justify-content: space-between;
     font-size: 25px;
@@ -175,6 +175,8 @@ html {
     color: white;
 }
 
+.sobre__texto__tres,
+.sobre__texto__dois,
 .sobre__texto{
     padding-top: 1.5%;
     font-family: 'Cinzel', sans-serif;
@@ -193,9 +195,9 @@ html {
 }
 
 .contato{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 3%;
 }
 
 .contato__texto a {
@@ -210,7 +212,7 @@ html {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 8% 8% 0 0;
+    padding-top: 11%;
     gap: 6%;
 }
 
@@ -222,9 +224,9 @@ html {
 }
 
 .contato__imagem img{
-    height: 400px;
-    width: auto;
-    margin: 3% 0 8% 10%;
+    height: auto;
+    max-width: 85%;
+    margin: 0 0 8% 10%;
     background-color: #5e0101;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgb(0, 0, 0);
@@ -237,4 +239,70 @@ html {
     font-family: 'Montserrat', sans-serif;
     color: white;
     padding: 1%;
+}
+
+@media (max-width: 1070px) {
+    .cabecalho__itens{
+        gap: 4%;
+        padding: 6% 0 4% 5%;
+    }
+    .cardapio{
+        padding-bottom: 20%;
+    }
+}
+
+@media (max-width: 910px) {
+    .cabecalho{
+        justify-content: center;
+    }
+    .cabecalho__itens{
+        display: none;
+    }
+    .cardapio__grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 4% 10%;
+      }
+      .cardapio{
+        padding-bottom: 10%;
+      }
+    .inicio__frase__dois{
+        display: none;
+    }
+    .mapa__botao{
+        padding: 4% 15% 7% 20%;
+    }
+    .mapa__botao__maps{
+        display: flex;
+        align-items: center;
+    }
+    .mapa__botao__waze{
+        display: flex;
+        align-items: center;
+    }
+    .contato__imagem{
+        display: none;
+    }   
+    .sobre__titulo{
+        font-size: 30px;
+    }
+    .sobre__texto__dois,
+    .sobre__texto{
+        font-size: 20px;
+    }
+    .sobre__texto__tres{
+        display: none;
+    }
+
+    .contato{
+        display: flex;
+        flex-direction: column;
+    }
+    .contato a {
+        margin-bottom: 5%;
+    }
+    .contato__texto{
+        font-size: 20px;
+        padding: 5% 0 10% 20%;
+    }
 }
